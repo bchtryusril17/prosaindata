@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Import Dataset &#8212; My sample book</title>
+    <title>&lt;no title&gt; &#8212; My sample book</title>
   
   
   
@@ -64,7 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="&lt;no title&gt;" href="pagerank.html" />
-    <link rel="prev" title="GET DATA IRIS (dari 4 data yang berbeda)" href="tugas2.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -155,23 +155,8 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tugas2.html">GET DATA IRIS (dari 4 data yang berbeda)</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Import Dataset</a></li>
-
-
-
-
-
-
-
-
-
-
-
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="modeling.html">Tugas Topic Modelling</a></li>
 </ul>
 
     </div>
@@ -355,7 +340,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Import Dataset</h1>
+    <h1><no title></h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -364,19 +349,7 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Import Dataset</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#case-folding">Case Folding</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deteksi-kata-tidak-baku-slank-words">Deteksi kata tidak baku (Slank Words)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#steaming">Steaming</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenizing-dan-stop-words">Tokenizing dan Stop Words</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf">TF-IDF</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pca">PCA</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#splitting-data">Splitting Data</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pemodelan-knn">Pemodelan KNN</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pemodelan-naive-bayes">Pemodelan Naive Bayes</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clusterring-k-means">Clusterring K-Means</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menentukan-clusstering">Menentukan Clusstering</a></li>
+                <ul class="simple visible nav section-nav flex-column">
 </ul>
 
             </nav>
@@ -389,7 +362,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="cell docutils container">
+  <p>#UTS</p>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
 <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
@@ -433,8 +407,7 @@ document.write(`
 </div>
 </div>
 </div>
-<div class="section" id="import-dataset">
-<h1>Import Dataset<a class="headerlink" href="#import-dataset" title="Permalink to this heading">#</a></h1>
+<p>##Import Dataset</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -446,14 +419,14 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/content/drive/MyDrive/PSD/dataset-baru.csv&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/content/drive/MyDrive/prosaindata/dataset-baru.csv&#39;</span><span class="p">)</span>
 <span class="n">data</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-835e658d-d5cf-4e93-9cd4-1d108c34a49c">
+  <div id="df-3a1842aa-991c-4861-8dc0-ec308fbf040f">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -549,7 +522,7 @@ document.write(`
 </table>
 <p>805 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-835e658d-d5cf-4e93-9cd4-1d108c34a49c')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-3a1842aa-991c-4861-8dc0-ec308fbf040f')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -600,12 +573,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-835e658d-d5cf-4e93-9cd4-1d108c34a49c button.colab-df-convert');
+          document.querySelector('#df-3a1842aa-991c-4861-8dc0-ec308fbf040f button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-835e658d-d5cf-4e93-9cd4-1d108c34a49c');
+          const element = document.querySelector('#df-3a1842aa-991c-4861-8dc0-ec308fbf040f');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -626,10 +599,10 @@ document.write(`
   </div>
   </div></div>
 </div>
-</div>
-<div class="section" id="case-folding">
-<h1>Case Folding<a class="headerlink" href="#case-folding" title="Permalink to this heading">#</a></h1>
-<p>Untuk mensetting semua huruf menjadi lowercase</p>
+<p>##Case Folding</p>
+<ul class="simple">
+<li><p>Untuk mensetting semua huruf menjadi lowercase</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lower_case_abstrak</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Abstrak&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
@@ -641,7 +614,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-fe43e198-5ce4-4903-93d0-5e91e81390ba">
+  <div id="df-a98985e4-16b2-439f-b4a2-8fa1c695b764">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -713,7 +686,7 @@ document.write(`
 </table>
 <p>805 rows × 1 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-fe43e198-5ce4-4903-93d0-5e91e81390ba')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a98985e4-16b2-439f-b4a2-8fa1c695b764')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -764,12 +737,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-fe43e198-5ce4-4903-93d0-5e91e81390ba button.colab-df-convert');
+          document.querySelector('#df-a98985e4-16b2-439f-b4a2-8fa1c695b764 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-fe43e198-5ce4-4903-93d0-5e91e81390ba');
+          const element = document.querySelector('#df-a98985e4-16b2-439f-b4a2-8fa1c695b764');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -790,13 +763,10 @@ document.write(`
   </div>
   </div></div>
 </div>
-<p>##Cleansing</p>
-<ol class="arabic simple">
-<li><p>Menghapus Mention</p></li>
-<li><p>Menghapus url</p></li>
-<li><p>Menghapus character</p></li>
-<li><p>Menghapus Hastag</p></li>
-</ol>
+<p>##Cleansing :</p>
+<ul class="simple">
+<li><p>Menghapus Mention, url, character dan Hastag</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#cleaning</span>
@@ -818,7 +788,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-7edb8fca-1646-420a-9590-b38aee016a58">
+  <div id="df-80eea8c7-db2e-49ea-b38b-6e8213be0d7d">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -890,7 +860,7 @@ document.write(`
 </table>
 <p>805 rows × 1 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-7edb8fca-1646-420a-9590-b38aee016a58')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-80eea8c7-db2e-49ea-b38b-6e8213be0d7d')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -941,12 +911,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-7edb8fca-1646-420a-9590-b38aee016a58 button.colab-df-convert');
+          document.querySelector('#df-80eea8c7-db2e-49ea-b38b-6e8213be0d7d button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-7edb8fca-1646-420a-9590-b38aee016a58');
+          const element = document.querySelector('#df-80eea8c7-db2e-49ea-b38b-6e8213be0d7d');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -967,10 +937,7 @@ document.write(`
   </div>
   </div></div>
 </div>
-</div>
-<div class="section" id="deteksi-kata-tidak-baku-slank-words">
-<h1>Deteksi kata tidak baku (Slank Words)<a class="headerlink" href="#deteksi-kata-tidak-baku-slank-words" title="Permalink to this heading">#</a></h1>
-<p>Mengubah</p>
+<p>##Deteksi kata tidak baku (Slank Words)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
@@ -1018,7 +985,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-31c3f465-3420-4832-94ed-db59d8e76c78">
+  <div id="df-310e011f-fd09-49da-85e1-d586774e31cf">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1090,7 +1057,7 @@ document.write(`
 </table>
 <p>805 rows × 1 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-31c3f465-3420-4832-94ed-db59d8e76c78')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-310e011f-fd09-49da-85e1-d586774e31cf')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1141,12 +1108,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-31c3f465-3420-4832-94ed-db59d8e76c78 button.colab-df-convert');
+          document.querySelector('#df-310e011f-fd09-49da-85e1-d586774e31cf button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-31c3f465-3420-4832-94ed-db59d8e76c78');
+          const element = document.querySelector('#df-310e011f-fd09-49da-85e1-d586774e31cf');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1167,10 +1134,10 @@ document.write(`
   </div>
   </div></div>
 </div>
-</div>
-<div class="section" id="steaming">
-<h1>Steaming<a class="headerlink" href="#steaming" title="Permalink to this heading">#</a></h1>
-<p>Mengubah kata semua kata menjadi kata dasar</p>
+<p>##Steaming :</p>
+<ul class="simple">
+<li><p>Mengubah kata semua kata menjadi kata dasar</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">Sastrawi</span>
@@ -1181,7 +1148,7 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
 Collecting Sastrawi
   Downloading Sastrawi-1.0.1-py2.py3-none-any.whl (209 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">209.7/209.7 KB</span> <span class=" -Color -Color-Red">7.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">209.7/209.7 kB</span> <span class=" -Color -Color-Red">5.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
 ?25hInstalling collected packages: Sastrawi
 Successfully installed Sastrawi-1.0.1
 </pre></div>
@@ -1208,7 +1175,7 @@ Successfully installed Sastrawi-1.0.1
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0001d500-bb15-48af-800b-3fd59f049729">
+  <div id="df-cdc751d6-971c-47a3-be01-09c66166090d">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1280,7 +1247,7 @@ Successfully installed Sastrawi-1.0.1
 </table>
 <p>805 rows × 1 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-0001d500-bb15-48af-800b-3fd59f049729')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-cdc751d6-971c-47a3-be01-09c66166090d')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1331,12 +1298,12 @@ Successfully installed Sastrawi-1.0.1
 
       <script>
         const buttonEl =
-          document.querySelector('#df-0001d500-bb15-48af-800b-3fd59f049729 button.colab-df-convert');
+          document.querySelector('#df-cdc751d6-971c-47a3-be01-09c66166090d button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-0001d500-bb15-48af-800b-3fd59f049729');
+          const element = document.querySelector('#df-cdc751d6-971c-47a3-be01-09c66166090d');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1357,9 +1324,7 @@ Successfully installed Sastrawi-1.0.1
   </div>
   </div></div>
 </div>
-</div>
-<div class="section" id="tokenizing-dan-stop-words">
-<h1>Tokenizing dan Stop Words<a class="headerlink" href="#tokenizing-dan-stop-words" title="Permalink to this heading">#</a></h1>
+<p>##Tokenizing dan Stop Words</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">words</span> <span class="o">=</span> <span class="p">[]</span>
@@ -2362,9 +2327,7 @@ Successfully installed Sastrawi-1.0.1
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="tf-idf">
-<h1>TF-IDF<a class="headerlink" href="#tf-idf" title="Permalink to this heading">#</a></h1>
+<p>##TF-IDF</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TfidfVectorizer </span>
@@ -3186,9 +3149,7 @@ Successfully installed Sastrawi-1.0.1
   </div>
   </div></div>
 </div>
-</div>
-<div class="section" id="pca">
-<h1>PCA<a class="headerlink" href="#pca" title="Permalink to this heading">#</a></h1>
+<p>##PCA</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
@@ -3590,9 +3551,7 @@ Successfully installed Sastrawi-1.0.1
   </div>
   </div></div>
 </div>
-</div>
-<div class="section" id="splitting-data">
-<h1>Splitting Data<a class="headerlink" href="#splitting-data" title="Permalink to this heading">#</a></h1>
+<p>##Splitting Data</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -3602,9 +3561,7 @@ Successfully installed Sastrawi-1.0.1
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="pemodelan-knn">
-<h1>Pemodelan KNN<a class="headerlink" href="#pemodelan-knn" title="Permalink to this heading">#</a></h1>
+<p>##Pemodelan KNN</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
@@ -3692,98 +3649,7 @@ weighted avg       0.83      0.83      0.83       161
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="pemodelan-naive-bayes">
-<h1>Pemodelan Naive Bayes<a class="headerlink" href="#pemodelan-naive-bayes" title="Permalink to this heading">#</a></h1>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Model Select</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
-<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
-<span class="n">gaussian</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
-<span class="n">gaussian</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">training</span><span class="p">,</span> <span class="n">training_label</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><style>#sk-container-id-2 {color: black;background-color: white;}#sk-container-id-2 pre{padding: 0;}#sk-container-id-2 div.sk-toggleable {background-color: white;}#sk-container-id-2 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-2 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-2 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-2 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-2 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-2 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-2 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-2 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-2 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-2 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-2 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-2 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-2 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-2 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-2 div.sk-item {position: relative;z-index: 1;}#sk-container-id-2 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-2 div.sk-item::before, #sk-container-id-2 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-2 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-2 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-2 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-2 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-2 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-2 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-2 div.sk-label-container {text-align: center;}#sk-container-id-2 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-2 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>GaussianNB()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" checked><label for="sk-estimator-id-2" class="sk-toggleable__label sk-toggleable__label-arrow">GaussianNB</label><div class="sk-toggleable__content"><pre>GaussianNB()</pre></div></div></div></div></div></div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">predict</span> <span class="o">=</span> <span class="n">gaussian</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test</span><span class="p">)</span> 
-<span class="n">predict</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;rpl&#39;, &#39;rpl&#39;, &#39;rpl&#39;,
-       &#39;komputasi&#39;, &#39;rpl&#39;, &#39;komputasi&#39;, &#39;rpl&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;,
-       &#39;komputasi&#39;, &#39;rpl&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;rpl&#39;, &#39;komputasi&#39;,
-       &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;,
-       &#39;rpl&#39;, &#39;rpl&#39;, &#39;rpl&#39;, &#39;komputasi&#39;, &#39;rpl&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;,
-       &#39;komputasi&#39;, &#39;rpl&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;rpl&#39;, &#39;rpl&#39;,
-       &#39;komputasi&#39;, &#39;rpl&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;rpl&#39;, &#39;rpl&#39;,
-       &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;rpl&#39;, &#39;komputasi&#39;, &#39;rpl&#39;,
-       &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;,
-       &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;rpl&#39;, &#39;komputasi&#39;, &#39;rpl&#39;,
-       &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;rpl&#39;, &#39;komputasi&#39;, &#39;rpl&#39;, &#39;komputasi&#39;,
-       &#39;rpl&#39;, &#39;rpl&#39;, &#39;rpl&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;rpl&#39;, &#39;rpl&#39;, &#39;rpl&#39;,
-       &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;rpl&#39;,
-       &#39;komputasi&#39;, &#39;rpl&#39;, &#39;rpl&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;rpl&#39;, &#39;rpl&#39;,
-       &#39;rpl&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;rpl&#39;, &#39;rpl&#39;, &#39;komputasi&#39;, &#39;rpl&#39;,
-       &#39;rpl&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;rpl&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;,
-       &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;,
-       &#39;rpl&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;rpl&#39;, &#39;rpl&#39;, &#39;rpl&#39;,
-       &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;rpl&#39;,
-       &#39;komputasi&#39;, &#39;rpl&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;rpl&#39;,
-       &#39;komputasi&#39;, &#39;rpl&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;,
-       &#39;komputasi&#39;, &#39;rpl&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;rpl&#39;,
-       &#39;rpl&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;,
-       &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;rpl&#39;, &#39;komputasi&#39;, &#39;rpl&#39;, &#39;komputasi&#39;,
-       &#39;komputasi&#39;, &#39;rpl&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;,
-       &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;rpl&#39;, &#39;rpl&#39;, &#39;komputasi&#39;,
-       &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;komputasi&#39;, &#39;rpl&#39;,
-       &#39;komputasi&#39;, &#39;rpl&#39;], dtype=&#39;&lt;U9&#39;)
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">test_label</span><span class="p">,</span> <span class="n">predict</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8136645962732919
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">test_label</span><span class="p">,</span> <span class="n">predict</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              precision    recall  f1-score   support
-
-   komputasi       0.90      0.82      0.86       113
-         rpl       0.66      0.79      0.72        48
-
-    accuracy                           0.81       161
-   macro avg       0.78      0.81      0.79       161
-weighted avg       0.83      0.81      0.82       161
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="clusterring-k-means">
-<h1>Clusterring K-Means<a class="headerlink" href="#clusterring-k-means" title="Permalink to this heading">#</a></h1>
+<p>##Clusterring K-Means</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Kategori&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Categorical</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;Kategori&quot;</span><span class="p">])</span>
@@ -3974,9 +3840,7 @@ weighted avg       0.83      0.81      0.82       161
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="menentukan-clusstering">
-<h1>Menentukan Clusstering<a class="headerlink" href="#menentukan-clusstering" title="Permalink to this heading">#</a></h1>
+<p>##Menentukan Clusstering</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">KMeans</span>
@@ -4163,7 +4027,6 @@ weighted avg       0.83      0.81      0.82       161
 <img alt="_images/9bfa0a62a441b71eed5ee2cc176115962d72c864dbb4c46d18dabc1c20346e7a.png" src="_images/9bfa0a62a441b71eed5ee2cc176115962d72c864dbb4c46d18dabc1c20346e7a.png" />
 </div>
 </div>
-</div>
 
     <script type="text/x-thebe-config">
     {
@@ -4197,12 +4060,12 @@ weighted avg       0.83      0.81      0.82       161
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="tugas2.html"
+       href="intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">GET DATA IRIS (dari 4 data yang berbeda)</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
       </div>
     </a>
     <a class="right-next"
@@ -4231,19 +4094,7 @@ weighted avg       0.83      0.81      0.82       161
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Import Dataset</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#case-folding">Case Folding</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#deteksi-kata-tidak-baku-slank-words">Deteksi kata tidak baku (Slank Words)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#steaming">Steaming</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenizing-dan-stop-words">Tokenizing dan Stop Words</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf">TF-IDF</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pca">PCA</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#splitting-data">Splitting Data</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pemodelan-knn">Pemodelan KNN</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pemodelan-naive-bayes">Pemodelan Naive Bayes</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clusterring-k-means">Clusterring K-Means</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menentukan-clusstering">Menentukan Clusstering</a></li>
+    <ul class="simple visible nav section-nav flex-column">
 </ul>
 
   </nav></div>
