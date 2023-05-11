@@ -36,7 +36,7 @@ pd.set_option('display.max_colwidth', None)
 
 ----- stderr -----
 [nltk_data] Downloading package punkt to /root/nltk_data...
-[nltk_data]   Unzipping tokenizers/punkt.zip.
+[nltk_data]   Package punkt is already up-to-date!
 ------------------
 
 [0;31m[0m
